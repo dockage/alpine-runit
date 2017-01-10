@@ -6,11 +6,12 @@ STOPSIGNAL SIGCONT
 ENV SERVICE_AVAILABLE_DIR=/etc/sv \
     SERVICE_ENABLED_DIR=/service
 
-RUN apk update \
-    && apk --no-cache add runit
-
 ADD https://cdn.rawgit.com/dockage/runit-scripts/master/alpine/installer /opt/
-RUN chmod +x /opt/installer \
+
+RUN apk update \
+    && apk --no-cache add runit \
+    && mkdir -p ${SERVICE_AVAILABLE_DIR} ${SERVICE_ENABLED_DIR} \
+    && chmod +x /opt/installer \
     && /opt/installer \
     && rm -rf /var/cache/apk/* /opt/installer
 
