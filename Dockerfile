@@ -1,10 +1,13 @@
-FROM alpine:3.5
+FROM dockage/alpine:3.5
 MAINTAINER Mohammad Abdoli Rad <m.abdolirad@gmail.com>
 
 STOPSIGNAL SIGCONT
 
 ENV SERVICE_AVAILABLE_DIR=/etc/sv \
     SERVICE_ENABLED_DIR=/service
+
+ENV SVDIR=${SERVICE_ENABLED_DIR} \
+    SVWAIT=7
 
 ADD https://cdn.rawgit.com/dockage/runit-scripts/master/alpine/installer /opt/
 
