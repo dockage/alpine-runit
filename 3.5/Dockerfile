@@ -1,6 +1,13 @@
 FROM dockage/alpine:3.5
 MAINTAINER Mohammad Abdoli Rad <m.abdolirad@gmail.com>
 
+LABEL org.label-schema.name="alpine-runit" \
+        org.label-schema.vendor="Dockage" \
+        org.label-schema.description="Docker image uses runit as a process supervision on Alpine Linux" \
+        org.label-schema.vcs-url="https://github.com/dockage/alpine-runit" \
+        org.label-schema.version="3.5" \
+        org.label-schema.license="MIT"
+
 STOPSIGNAL SIGCONT
 
 ENV SERVICE_AVAILABLE_DIR=/etc/sv \
@@ -18,4 +25,4 @@ RUN apk update \
     && /opt/installer \
     && rm -rf /var/cache/apk/* /opt/installer
 
-ENTRYPOINT ["/sbin/runit-init"]
+CMD ["/sbin/runit-init"]
