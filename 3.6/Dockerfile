@@ -16,7 +16,7 @@ ENV SERVICE_AVAILABLE_DIR=/etc/sv \
 ENV SVDIR=${SERVICE_ENABLED_DIR} \
     SVWAIT=7
 
-ADD https://cdn.rawgit.com/dockage/runit-scripts/master/alpine/installer /opt/
+ADD https://rawgit.com/dockage/runit-scripts/master/scripts/installer /opt/
 
 RUN apk update \
     && apk --no-cache add runit \
