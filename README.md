@@ -1,4 +1,4 @@
-# alpine-runit [![Docker Pulls](https://img.shields.io/docker/pulls/dockage/alpine-runit.svg?style=flat)](https://hub.docker.com/r/dockage/alpine-runit/) [![Docker Stars](https://img.shields.io/docker/stars/dockage/alpine-runit.svg?style=flat)](https://hub.docker.com/r/dockage/alpine-runit/) [![MicroBadger](https://images.microbadger.com/badges/image/dockage/alpine-runit.svg)](https://microbadger.com/images/dockage/alpine-runit) [![Docker Automated build](https://img.shields.io/docker/automated/dockage/alpine-runit.svg?style=flat)](https://hub.docker.com/r/dockage/alpine-runit/)
+# alpine-runit [![Docker Pulls](https://img.shields.io/docker/pulls/dockage/alpine-runit.svg)](https://hub.docker.com/r/dockage/alpine-runit/) [![Docker Stars](https://img.shields.io/docker/stars/dockage/alpine-runit.svg?style=flat)](https://hub.docker.com/r/dockage/alpine-runit/) [![MicroBadger](https://images.microbadger.com/badges/image/dockage/alpine-runit:3.5.svg)](https://microbadger.com/images/dockage/alpine-runit:3.5) [![Docker Build Status](https://img.shields.io/docker/build/dockage/alpine-runit.svg)](https://hub.docker.com/r/dockage/alpine-runit/) [![Docker Automated build](https://img.shields.io/docker/automated/dockage/alpine-runit.svg)](https://hub.docker.com/r/dockage/alpine-runit/)
 [runit](http://smarden.org/runit) is an init scheme for Unix-like operating systems that initializes, [supervises](https://en.wikipedia.org/wiki/Process_supervision), and ends processes throughout the operating system. Runit is a reimplementation of the [daemontools](https://en.wikipedia.org/wiki/Daemontools) process supervision toolkit that runs on the Linux, Mac OS X, *BSD, and Solaris operating systems. Runit features parallelization of the start up of system services, which can speed up the boot time of the operating system.
 
 
@@ -30,7 +30,7 @@ Automated builds of the image are available on [Dockerhub](https://hub.docker.co
 > **Note**: Builds are also available on [Quay.io](https://quay.io/repository/dockage/alpine-runit)
 
 ```bash
-docker pull dockage/alpine-runit:3.6
+docker pull dockage/alpine-runit:3.5
 ```
 
 Alternatively you can build the image yourself.
