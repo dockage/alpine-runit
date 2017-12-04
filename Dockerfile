@@ -1,11 +1,11 @@
-FROM dockage/alpine:3.6
+FROM dockage/alpine:3.7
 MAINTAINER Mohammad Abdoli Rad <m.abdolirad@gmail.com>
 
 LABEL org.label-schema.name="alpine-runit" \
         org.label-schema.vendor="Dockage" \
         org.label-schema.description="Docker image uses runit as a process supervision on Alpine Linux" \
         org.label-schema.vcs-url="https://github.com/dockage/alpine-runit" \
-        org.label-schema.version="3.6" \
+        org.label-schema.version="3.7" \
         org.label-schema.license="MIT"
 
 STOPSIGNAL SIGCONT
