@@ -22,6 +22,7 @@ RUN apk update \
     && apk --no-cache add runit \
     && mkdir -p ${SERVICE_AVAILABLE_DIR} ${SERVICE_ENABLED_DIR} \
     && chmod +x /opt/installer \
+    && sync \
     && /opt/installer \
     && rm -rf /var/cache/apk/* /opt/installer
 
