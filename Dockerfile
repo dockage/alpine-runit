@@ -1,4 +1,4 @@
-FROM dockage/alpine:3.7
+FROM dockage/alpine:3.19
 MAINTAINER Mohammad Abdoli Rad <m.abdolirad@gmail.com>
 
 LABEL org.label-schema.name="alpine-runit" \
